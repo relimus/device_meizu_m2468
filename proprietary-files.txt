@@ -142,8 +142,8 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # ANT
-lib/com.dsi.ant@1.0.so
-lib64/com.dsi.ant@1.0.so
+system/lib/com.dsi.ant@1.0.so
+system/lib64/com.dsi.ant@1.0.so
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
@@ -283,7 +283,7 @@ vendor/lib64/soundfx/libvolumelistener.so
 vendor/lib64/libvibrator.so
 
 # Audio configs
-etc/audio_effects.xml
+system/etc/audio_effects.xml
 vendor/etc/audio/sku_kalama/MicSealingTest.wav
 vendor/etc/audio/sku_kalama/RecNoise.wav
 vendor/etc/audio/sku_kalama/audio_effects.conf
@@ -334,8 +334,8 @@ vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so
 
 # Bluetooth (A2DP)
-lib/vendor.qti.hardware.bluetooth.audio-V1-ndk.so
-lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so
+system/lib/vendor.qti.hardware.bluetooth.audio-V1-ndk.so
+system/lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so
 system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.1.so
@@ -395,18 +395,18 @@ vendor/etc/init/android.hardware.boot@1.2-service.rc
 vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
 
 # Camera
-lib/vendor.qti.hardware.camera.offlinecamera-V1-ndk.so
-lib/vendor.qti.hardware.camera.offlinecamera-V2-ndk.so
-lib/vendor.qti.hardware.camera.postproc-V1-ndk.so
-lib64/libarcsoft_dualcam_refocus_image.so
-lib64/libarcsoft_hdr_detection.so
-lib64/libarcsoft_qnnhtp.so
-lib64/libarcsoft_scbokeh_image.so
-lib64/libarcsoft_scbokeh_preview.so
-lib64/libarcsoft_supernight.so
-lib64/vendor.qti.hardware.camera.offlinecamera-V1-ndk.so
-lib64/vendor.qti.hardware.camera.offlinecamera-V2-ndk.so
-lib64/vendor.qti.hardware.camera.postproc-V1-ndk.so
+system/lib/vendor.qti.hardware.camera.offlinecamera-V1-ndk.so
+system/lib/vendor.qti.hardware.camera.offlinecamera-V2-ndk.so
+system/lib/vendor.qti.hardware.camera.postproc-V1-ndk.so
+system/lib64/libarcsoft_dualcam_refocus_image.so
+system/lib64/libarcsoft_hdr_detection.so
+system/lib64/libarcsoft_qnnhtp.so
+system/lib64/libarcsoft_scbokeh_image.so
+system/lib64/libarcsoft_scbokeh_preview.so
+system/lib64/libarcsoft_supernight.so
+system/lib64/vendor.qti.hardware.camera.offlinecamera-V1-ndk.so
+system/lib64/vendor.qti.hardware.camera.offlinecamera-V2-ndk.so
+system/lib64/vendor.qti.hardware.camera.postproc-V1-ndk.so
 system_ext/lib/vendor.qti.hardware.seccam@1.0.so
 system_ext/lib64/vendor.qti.hardware.seccam@1.0.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-external-service
@@ -993,8 +993,8 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 
 # CNE
-lib/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
-lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
+system/lib/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
+system/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
 system_ext/lib/com.quicinc.cne.api@1.0.so
 system_ext/lib/com.quicinc.cne.api@1.1.so
 system_ext/lib/com.quicinc.cne.constants@1.0.so
@@ -1258,26 +1258,26 @@ vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
 # Display
-lib/vendor.qti.hardware.display.config-V1-ndk.so
-lib/vendor.qti.hardware.display.config-V10-ndk.so
-lib/vendor.qti.hardware.display.config-V2-ndk.so
-lib/vendor.qti.hardware.display.config-V3-ndk.so
-lib/vendor.qti.hardware.display.config-V4-ndk.so
-lib/vendor.qti.hardware.display.config-V5-ndk.so
-lib/vendor.qti.hardware.display.config-V6-ndk.so
-lib/vendor.qti.hardware.display.config-V7-ndk.so
-lib/vendor.qti.hardware.display.config-V8-ndk.so
-lib/vendor.qti.hardware.display.config-V9-ndk.so
-lib64/vendor.qti.hardware.display.config-V1-ndk.so
-lib64/vendor.qti.hardware.display.config-V10-ndk.so
-lib64/vendor.qti.hardware.display.config-V2-ndk.so
-lib64/vendor.qti.hardware.display.config-V3-ndk.so
-lib64/vendor.qti.hardware.display.config-V4-ndk.so
-lib64/vendor.qti.hardware.display.config-V5-ndk.so
-lib64/vendor.qti.hardware.display.config-V6-ndk.so
-lib64/vendor.qti.hardware.display.config-V7-ndk.so
-lib64/vendor.qti.hardware.display.config-V8-ndk.so
-lib64/vendor.qti.hardware.display.config-V9-ndk.so
+system/lib/vendor.qti.hardware.display.config-V1-ndk.so
+system/lib/vendor.qti.hardware.display.config-V10-ndk.so
+system/lib/vendor.qti.hardware.display.config-V2-ndk.so
+system/lib/vendor.qti.hardware.display.config-V3-ndk.so
+system/lib/vendor.qti.hardware.display.config-V4-ndk.so
+system/lib/vendor.qti.hardware.display.config-V5-ndk.so
+system/lib/vendor.qti.hardware.display.config-V6-ndk.so
+system/lib/vendor.qti.hardware.display.config-V7-ndk.so
+system/lib/vendor.qti.hardware.display.config-V8-ndk.so
+system/lib/vendor.qti.hardware.display.config-V9-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V1-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V10-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V2-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V3-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V4-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V5-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V6-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V7-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V8-ndk.so
+system/lib64/vendor.qti.hardware.display.config-V9-ndk.so
 system_ext/lib/vendor.display.color@1.0.so
 system_ext/lib/vendor.display.color@1.1.so
 system_ext/lib/vendor.display.color@1.2.so
@@ -1751,19 +1751,19 @@ vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib/libmedia_codeclist.so
-lib/libstagefright_aidl_bufferpool2.so
-lib/libstagefright_bufferpool@2.0.1.so
-lib/libstagefright_codecbase.so
-lib/libstagefright_framecapture_utils.so
-lib/libstagefright_surface_utils.so
-lib64/libmedia_codeclist.so
-lib64/libstagefright_aidl_bufferpool2.so
-lib64/libstagefright_bufferpool@2.0.1.so
-lib64/libstagefright_codecbase.so
-lib64/libstagefright_framecapture_utils.so
-lib64/libstagefright_surface_utils.so
+system/etc/seccomp_policy/mediacodec.policy
+system/lib/libmedia_codeclist.so
+system/lib/libstagefright_aidl_bufferpool2.so
+system/lib/libstagefright_bufferpool@2.0.1.so
+system/lib/libstagefright_codecbase.so
+system/lib/libstagefright_framecapture_utils.so
+system/lib/libstagefright_surface_utils.so
+system/lib64/libmedia_codeclist.so
+system/lib64/libstagefright_aidl_bufferpool2.so
+system/lib64/libstagefright_bufferpool@2.0.1.so
+system/lib64/libstagefright_codecbase.so
+system/lib64/libstagefright_framecapture_utils.so
+system/lib64/libstagefright_surface_utils.so
 system_ext/lib/vendor.qti.hardware.vpp@1.1.so
 system_ext/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/bin/hw/android.hardware.media.omx@1.0-service
@@ -1879,7 +1879,7 @@ vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib64/vendor.tms.tmsnfc@1.0.so
 
 # NFC configs
-etc/libnfc-nci.conf
+system/etc/libnfc-nci.conf
 product/etc/libnfc-nci.conf
 vendor/etc/libnfc-SN220_19_2MHZ.conf
 vendor/etc/libnfc-SN220_38_4MHZ.conf
@@ -1911,7 +1911,7 @@ vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Payment (IFAA)
-app/IFAAService/IFAAService.apk
+system/app/IFAAService/IFAAService.apk
 
 # Perf
 system_ext/etc/perf/wlc_model.tflite
@@ -2713,7 +2713,7 @@ vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so
 
 # Soter
-app/SoterService/SoterService.apk
+system/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
