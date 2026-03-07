@@ -4,6 +4,7 @@
 #
 
 DEVICE_PATH := device/meizu/m2468
+KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
 AB_OTA_UPDATER := true
