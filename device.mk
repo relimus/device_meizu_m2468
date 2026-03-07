@@ -107,6 +107,13 @@ $(call inherit-product, hardware/qcom-caf/sm8550/data-ipa-cfg-mgr/ipacm_vendor_p
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
+# Media
+PRODUCT_PACKAGES += \
+    libmedia_codeclist \
+    libstagefright_codecbase \
+    libstagefright_framecapture_utils \
+    libstagefright_surface_utils
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
