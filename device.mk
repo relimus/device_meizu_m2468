@@ -130,5 +130,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30 31 32 33 34
+TARGET_FLATTEN_APEX := false
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/meizu/m2468/m2468-vendor.mk)
