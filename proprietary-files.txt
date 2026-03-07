@@ -183,7 +183,7 @@ vendor/lib/libPeripheralStateUtils.so
 #vendor/lib/libar-acdb.so
 #vendor/lib/libar-gpr.so
 #vendor/lib/libar-gsl.so
-#vendor/lib/libar-pal.so
+vendor/lib/libar-pal.so
 #vendor/lib/libats.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libdiag.so
@@ -397,7 +397,7 @@ system/lib64/vendor.qti.hardware.camera.offlinecamera-V2-ndk.so
 system/lib64/vendor.qti.hardware.camera.postproc-V1-ndk.so
 system_ext/lib/vendor.qti.hardware.seccam@1.0.so
 system_ext/lib64/vendor.qti.hardware.seccam@1.0.so
-vendor/bin/hw/android.hardware.camera.provider@2.4-external-service
+#vendor/bin/hw/android.hardware.camera.provider@2.4-external-service
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/android.hardware.camera.provider@2.4-external-service.rc
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
@@ -947,7 +947,7 @@ vendor/firmware/CAMERA_ICP_170.elf
 # CAS
 vendor/bin/hw/android.hardware.cas@1.2-service
 vendor/etc/init/android.hardware.cas@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
+#vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -1709,7 +1709,7 @@ system/lib64/libstagefright_framecapture_utils.so
 system/lib64/libstagefright_surface_utils.so
 system_ext/lib/vendor.qti.hardware.vpp@1.1.so
 system_ext/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/bin/hw/android.hardware.media.omx@1.0-service
+#vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/qconfigservice
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
@@ -2658,7 +2658,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Soundtrigger
 system_ext/lib/vendor.qti.voiceprint@1.0.so
 system_ext/lib64/vendor.qti.voiceprint@1.0.so
-vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
+#vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
 #vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so
 #vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
 #vendor/lib/hw/sound_trigger.primary.kalama.so
@@ -2767,7 +2767,7 @@ vendor/etc/wifi/vendor_cmd.xml
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Wi-Fi Display
-system_ext/bin/wfdservice
+#system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast.xml
 system_ext/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
@@ -3516,7 +3516,7 @@ vendor/lib/libdisp-aba.so
 vendor/lib/libdpps.so
 vendor/lib/libdrmtime.so
 vendor/lib/libdsd2pcm.so
-vendor/lib/libeai_fixed_32.so
+#vendor/lib/libeai_fixed_32.so
 vendor/lib/libemsensor.so
 vendor/lib/libengineplugin.so
 vendor/lib/libesesbprovision.so
