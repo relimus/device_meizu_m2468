@@ -59,11 +59,25 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdservice.so',
     ): blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp', 'android.media.audio.common.types-V4-cpp'),
+    'vendor/bin/hw/hostapd': blob_fixup()
+        .replace_needed('android.hardware.wifi.hostapd-V1-ndk', 'android.hardware.wifi.hostapd-V3-ndk'),
 }
 
 lib_fixups: lib_fixups_user_type = {
-
-    'libmdnssd': lib_fixup_remove,
+    (
+    'libmdnssd',
+    'libagmclient',
+    'vendor.qti.hardware.AGMIPC@1.0-impl',
+    'libar-pal',
+    'libagmmixer',
+    'libpalclient',
+    'libats',
+    'libar-acdb',
+    'libwifi-hal-ctrl',
+    'libagm',
+    'liblx-osal',
+    'vendor.qti.hardware.pal@1.0-impl',
+    ): lib_fixup_remove,
 }
 
 namespace_imports = [
