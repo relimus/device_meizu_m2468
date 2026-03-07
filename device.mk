@@ -53,6 +53,41 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@7.1-impl \
+    android.hardware.audio.effect@7.0-impl \
+    audio.primary.default \
+    audio.r_submix.default \
+    libtinycompress
+
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    audioadsprpcd \
+    android.hardware.audio.service \
+    audio.primary.kalama \
+    sound_trigger.primary.kalama \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
+    libaudiochargerlistener \
+    libbatterylistener \
+    libfmpal \
+    libhfp_pal \
+    libsndcardparser \
+    libpalclient \
+    libqcompostprocbundle \
+    vendor.qti.hardware.AGMIPC@1.0-impl \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener
+
+$(call soong_config_set, android_hardware_audio, run_64bit, true)
+
 # API levels
 BOARD_SHIPPING_API_LEVEL := 33
 PRODUCT_SHIPPING_API_LEVEL := 34
@@ -67,6 +102,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+# IPACM
+$(call inherit-product, hardware/qcom-caf/sm8550/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
@@ -80,39 +118,6 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.crda.sh \
-    init.kernel.post_boot-kalama.sh \
-    init.kernel.post_boot-kalama_3_2_1.sh \
-    init.kernel.post_boot-kalama_3_4_0.sh \
-    init.kernel.post_boot-kalama_default_3_4_1.sh \
-    init.kernel.post_boot.sh \
-    init.mdm.sh \
-    init.meizu.smart_zram.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.display_boot.sh \
-    init.qti.kernel.debug-kalama.sh \
-    init.qti.kernel.debug.sh \
-    init.qti.kernel.early_debug-kalama.sh \
-    init.qti.kernel.early_debug.sh \
-    init.qti.kernel.sh \
-    init.qti.media.sh \
-    init.qti.qcv.sh \
-    init.qti.write.sh \
-    qca6234-service.sh \
-    system_dlkm_modprobe.sh \
-    vendor_modprobe.sh \
-
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.factory.rc \
@@ -123,9 +128,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.recovery.qcom.rc \
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.qcom
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
@@ -133,6 +135,19 @@ PRODUCT_SOONG_NAMESPACES += \
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30 31 32 33 34
 TARGET_FLATTEN_APEX := false
+
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    hostapd \
+    hostapd_cli \
+    libwifi-hal-qcom \
+    libwpa_client \
+    wpa_cli \
+    wpa_supplicant \
+    wpa_supplicant.conf \
+    libpasn \
+    libwifi-hal-ctrl
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/meizu/m2468/m2468-vendor.mk)
