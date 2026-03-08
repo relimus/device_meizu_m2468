@@ -61,6 +61,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.media.audio.common.types-V2-cpp', 'android.media.audio.common.types-V4-cpp'),
     'vendor/bin/hw/hostapd': blob_fixup()
         .replace_needed('android.hardware.wifi.hostapd-V1-ndk', 'android.hardware.wifi.hostapd-V3-ndk'),
+    (
+    'vendor/lib64/nfc_nci.nqx.default.hw.so',
+    'vendor/lib64/tms-utils.so',
+    'vendor/lib64/nfc_nci.thn31nfc.tms.so',
+    ): blob_fixup()
+        .add_needed('libbase_shim.so'),
 }
 
 lib_fixups: lib_fixups_user_type = {
