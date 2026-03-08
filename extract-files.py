@@ -74,7 +74,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libqtikeymint.so',
     ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
-    'system_ext/lib64/libsigmautils.so': blob_fixup()
+    (
+    'system_ext/lib64/libsigmautils.so',
+    'system_ext/lib64/libwfdmmsrc_system.so',
+    ): blob_fixup()
         .add_needed('libgui_shim.so'),
     'vendor/lib64/libarcsoft_beautyshot.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_acquire')
