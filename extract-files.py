@@ -67,6 +67,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/nfc_nci.thn31nfc.tms.so',
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .add_needed('qcodec2_shim.so'),
 }
 
 lib_fixups: lib_fixups_user_type = {

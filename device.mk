@@ -112,7 +112,8 @@ PRODUCT_PACKAGES += \
     libmedia_codeclist \
     libstagefright_codecbase \
     libstagefright_framecapture_utils \
-    libstagefright_surface_utils
+    libstagefright_surface_utils \
+    qcodec2_shim
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
