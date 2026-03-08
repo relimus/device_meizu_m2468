@@ -69,7 +69,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('qcodec2_shim.so'),
-    'vendor/lib64/libspukeymint.so': blob_fixup()
+    (
+    'vendor/lib64/libspukeymint.so',
+    'vendor/lib64/libqtikeymint.so',
+    ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
     'system_ext/lib64/libsigmautils.so': blob_fixup()
         .add_needed('libgui_shim.so'),
