@@ -89,7 +89,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
-    'vendor/bin/hw/android.hardware.security.keymint-service-qti': blob_fixup()
+    (
+    'vendor/bin/hw/android.hardware.security.keymint-service-qti',
+    'vendor/bin/hw/android.hardware.security.keymint-service-spu-qti',
+    ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
 }
 
