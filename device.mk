@@ -97,9 +97,6 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
 
 # IPACM
 $(call inherit-product, hardware/qcom-caf/sm8550/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
@@ -113,7 +110,8 @@ PRODUCT_PACKAGES += \
     libstagefright_codecbase \
     libstagefright_framecapture_utils \
     libstagefright_surface_utils \
-    qcodec2_shim
+    qcodec2_shim \
+    libcodec2_hidl_plugin
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -154,7 +152,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
     libpasn \
-    libwifi-hal-ctrl
+    libwifi-hal-ctrl \
+    libwifi-hal
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/meizu/m2468/m2468-vendor.mk)

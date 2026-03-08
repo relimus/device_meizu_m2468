@@ -1950,7 +1950,7 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
 # QESD
-system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml
+#system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml
 system_ext/lib/vendor.qti.qesdhal@1.0.so
 system_ext/lib/vendor.qti.qesdhal@1.1.so
 system_ext/lib/vendor.qti.qesdhal@1.2.so
@@ -2740,7 +2740,7 @@ vendor/bin/cnss-daemon
 #vendor/bin/wpa_cli
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
+#vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 #vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 #vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
 vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
@@ -2752,7 +2752,7 @@ vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
 #vendor/lib64/libwifi-hal-ctrl.so
 #vendor/lib64/libwifi-hal-qcom.so
-vendor/lib64/libwifi-hal.so
+#vendor/lib64/libwifi-hal.so
 #vendor/lib64/vendor.qti.hardware.wifi.supplicant-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
@@ -2773,7 +2773,7 @@ system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast.xml
 system_ext/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 system_ext/lib/libdisplayconfig.system.qti.so
-system_ext/lib/libmiracastsystem.so
+system_ext/lib/libmiracastsystem.so;DISABLE_CHECKELF
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib/libmmrtpdecoder.so
@@ -2801,7 +2801,7 @@ system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
 system_ext/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so
 system_ext/lib64/libdisplayconfig.system.qti.so
-system_ext/lib64/libmiracastsystem.so
+system_ext/lib64/libmiracastsystem.so;DISABLE_CHECKELF
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/libmmrtpdecoder.so
@@ -2849,7 +2849,7 @@ vendor/lib64/libwfdcommonutils_proprietary.so
 vendor/lib64/libwfdconfigutils_proprietary.so
 vendor/lib64/libwfddisplayconfig_vendor.so
 vendor/lib64/libwfdhdcpcp.so
-vendor/lib64/libwfdhdcpservice_proprietary.so
+vendor/lib64/libwfdhdcpservice_proprietary.so;DISABLE_CHECKELF
 vendor/lib64/libwfdmminterface_proprietary.so
 vendor/lib64/libwfdmmservice_proprietary.so
 vendor/lib64/libwfdmmsrc_proprietary.so
@@ -2920,7 +2920,7 @@ vendor/bin/battery_stats
 vendor/bin/camxoverridesettings
 vendor/bin/ccid_daemon_nr
 #vendor/bin/checkpoint_gc
-vendor/bin/cnss_diag
+vendor/bin/cnss_diag;DISABLE_CHECKELF
 vendor/bin/compatibilitytest
 vendor/bin/cplay
 vendor/bin/cpu_high_load
@@ -2950,7 +2950,7 @@ vendor/bin/fmfactorytest
 vendor/bin/fmfactorytestserver
 vendor/bin/ftmdaemon
 vendor/bin/gt_mp_test
-vendor/bin/hal_proxy_daemon
+vendor/bin/hal_proxy_daemon;DISABLE_CHECKELF
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
 vendor/bin/ims-dataservice-daemon
@@ -3183,7 +3183,7 @@ vendor/etc/init/shsusrd.rc
 vendor/etc/init/star_core_serv.rc
 vendor/etc/init/sxrd.rc
 vendor/etc/init/tlpd.rc
-vendor/etc/init/vendor.aks.gamepad@1.0-service.rc
+#vendor/etc/init/vendor.aks.gamepad@1.0-service.rc
 vendor/etc/init/vendor.awa.realitytap.service.rc
 vendor/etc/init/vendor.dpmd.rc
 vendor/etc/init/vendor.meizu.hardware.aw_light@1.0-service.rc
@@ -3507,7 +3507,7 @@ vendor/lib/libcmd_test.so
 vendor/lib/libcmd_tp.so
 vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
-vendor/lib/libcodec2_hidl_plugin.so
+#vendor/lib/libcodec2_hidl_plugin.so
 vendor/lib/libcomm-protos.so
 vendor/lib/libcrussp.so
 vendor/lib/libdiagjni.so
@@ -3581,7 +3581,7 @@ vendor/lib/liblowi_wifihal.so
 vendor/lib/liblqe.so
 vendor/lib/libmapdata_api.so
 vendor/lib/libmasc.so
-vendor/lib/libmcs.so
+vendor/lib/libmcs.so;DISABLE_CHECKELF
 vendor/lib/libmctfengine_stub.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libmfGhostDetection.so
@@ -3821,7 +3821,7 @@ vendor/lib64/libcmd_test.so
 vendor/lib64/libcmd_tp.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
-vendor/lib64/libcodec2_hidl_plugin.so
+#vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcomm-protos.so
 vendor/lib64/libcrussp.so
 vendor/lib64/libdiagjni.so
@@ -3904,7 +3904,7 @@ vendor/lib64/liblowi_wifihal.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmapdata_api.so
 vendor/lib64/libmasc.so
-vendor/lib64/libmcs.so
+vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libmemperfd.so
@@ -4112,3 +4112,8 @@ vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so
+
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/android.hardware.camera.provider@2.4-external.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/android.hardware.camera.provider@2.4-external.so
